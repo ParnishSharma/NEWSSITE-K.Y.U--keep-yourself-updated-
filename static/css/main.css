@@ -1,0 +1,150 @@
+body {
+  background-color: #ffffff;
+ overflow-x: hidden;
+}
+
+.navbar-brand{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #d12a2a;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.butnav li a {
+  font-size: 28px;
+  color: #8a2be2;
+  margin-right: 20px;
+}
+
+.card-title,
+.card-text {
+  color: #d12a2a;
+}
+
+.butnav li:last-child a {
+  margin-right: 0;
+}
+
+.butnav li a:hover {
+  color: #b32be2;
+  transition: all 0.3s ease-in-out;
+}
+
+body.bg-dark {
+  background-color: #03001c;
+}
+
+.text-light {
+  color: #d12a2a !important;
+}
+
+.dark-mode-button {
+  background-color: #e45299;
+  color: #231f1f;
+}
+.dark-mode-button.toggled ~ .navbar {
+  background-color: #e38383;
+}
+
+.dark-mode-button:hover {
+  background-color: #ff1493;
+}
+
+.card {
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #03001c
+}
+
+/* Style for text when dark mode is on */
+.card-body {
+  padding: 2rem;
+  border-radius: 2px;
+  font-size: larger;
+  color: rgb(223, 12, 12);
+  background-color: #231f1f;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  font-size: 2rem;
+  background-color: #231f1f;
+  font-weight: bold;
+  color:  #d12a !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* change this to 2 or 4 depending on the size of your cards */
+  -webkit-box-orient: vertical;
+}
+
+body.bg-dark .card-body {
+  color: white;
+}
+.card-text {
+  font-size: 30px;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  background-color: #aba9b6;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #9bc2ec;
+  margin-top: 1rem;
+}
+.navbar-nav .nav-link {
+  color: #f94444; 
+  font-size: 30px;
+  margin-left: 20px;/* Change this to the color of your choice */
+}
+.navbar-nav .nav-link {
+  color: #f94444; 
+  font-size: 30px;
+  margin-left: 20px;/* Change this to the color of your choice */
+}
+
+
+.navbar-nav .nav-link:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0af, 0 0 70px #0af, 0 0 80px #0af, 0 0 100px #0af, 0 0 150px #0af;
+}
+/* CSS for hovering effect on read more button */
+.btn-read-more:hover {
+  background-color: #007bff; /* change background color */
+  color: #fff; /* change text color */
+}
+@media (min-width: 992px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+
+@media (max-width: 991px) and (min-width: 576px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 775px) {
+  .card-columns {
+    column-count: 3;
+;
+  }
+}
+@media (max-width: 575px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
